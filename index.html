@@ -24,20 +24,32 @@
 			font-size: 3rem;
 		}
 		.container{
-			min-height: 100vh;
+			display: flex;
+			height: 100%;
 		}
 		.hero{
-			padding-top: 1rem;
-			padding-left: 1rem;
-			background-color: grey;
-			max-width: 100vh;
-			height: 100vh;
+			padding: 2rem;
+			padding-top: 0;
+			flex: 0 0 auto;
+			width: min(100vw, 100vh);
+			height: min(100vw, 100vh);
 		}
 		.sidekick {
-			padding: 0;
-			margin: 0;
+			padding: 2rem;
+			padding-top: 1rem;
+			flex: 1 1 auto;
 			background-color: bisque;
 		}
+		/* Media query for vertical layout */
+		@media (max-aspect-ratio: 1/1) {
+		.container {
+			flex-direction: column; /* Change to vertical layout */
+		}
+		.hero {
+			width: 100%; /* Full width in vertical layout */
+			height: min(100vw, 100vh); /* Maintain height based on smallest side */
+		}
+}
 	</style>
 </head>
 <body>
