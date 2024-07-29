@@ -8,9 +8,12 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 	<style>
-		p{
+		p {
 			font-family: 'EB Garamond';
 			font-size: 1.25rem;
+		}
+		a {
+			color: darkgreen;
 		}
 		html, body {
 			margin: 0;
@@ -20,6 +23,7 @@
 			background-color: #EEE9D4;
 		}
 		h1 {
+			margin-top: 4rem;
 			font-family: 'EB Garamond';
 			font-weight: 400;
 			font-size: 3rem;
@@ -32,22 +36,22 @@
 			font-style: italic;
 			line-height: 90%;
 		}
-
-		.container{
+		.container {
 			display: flex;
 			height: 100%;
 		}
-		.hero{
+		.hero {
 			padding: 2rem;
 			padding-top: 0;
 			flex: 0 0 auto;
-			width: min(50vw, 75vh);
+			width: min(100vw, 75vh);
 			height: min(100vw, 100vh);
 		}
-		.sidekick{
+		.sidekick {
 			padding: 2rem;
 			padding-top: 1rem;
 			flex: 1 1 auto;
+			padding-right: 20%;
 		}
 		/* Media query for vertical layout */
 		@media (max-aspect-ratio: 1/1) {
@@ -56,7 +60,10 @@
 		}
 		.hero {
 			width: 100%; /* Full width in vertical layout */
-			height: min(100vw, 75vh); /* Maintain height based on smallest side */
+			height: min(75vw, 75vh); /* Maintain height based on smallest side */
+		}
+		.sidekick {
+			padding-right: 15%;
 		}
 }
 	</style>
@@ -67,8 +74,9 @@
 			<h1>zzb—design<br><span style="font-style: italic;">comunicação estratégica</span></h1>
 		</div>
 		<div class="sidekick">
-			<p>Todos os outros animais usam seus sistemas de comunicação para descrever a realidade. 
-				Nós humanos usamos os nossos para criar novas realidades.”<br>São Paulo SP<br><a href="mailto:oi@zzb.design">oi@zzb.design</a></p>
+			<p>“Todos os outros animais usam seus sistemas de comunicação para descrever a realidade. <br>Nós humanos usamos os nossos para criar novas realidades.”<br>— Yuval Harari</p>
+			<p><a href="mailto:oi@zzb.design">oi@zzb.design</a></p>
+			<p>São Paulo — SP</p>
 		</div>
 	</div>
 	</body>
