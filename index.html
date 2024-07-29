@@ -16,13 +16,20 @@
 			margin: 0;
 			padding: 0;
 			height: 100%;
-			background-color: aquamarine;
+			background-color: #EEE9D4;
 		}
 		h1 {
 			font-family: 'EB Garamond';
 			font-weight: 400;
 			font-size: 3rem;
 		}
+		h2 {
+			font-family: 'EB Garamond';
+			font-weight: 400;
+			font-size: 3rem;
+			font-style: italic;
+		}
+
 		.container{
 			display: flex;
 			height: 100%;
@@ -31,14 +38,13 @@
 			padding: 2rem;
 			padding-top: 0;
 			flex: 0 0 auto;
-			width: min(90vw, 100vh);
+			width: min(75vw, 100vh);
 			height: min(100vw, 100vh);
 		}
 		.sidekick{
 			padding: 2rem;
 			padding-top: 1rem;
 			flex: 1 1 auto;
-			background-color: aquamarine;
 		}
 		/* Media query for vertical layout */
 		@media (max-aspect-ratio: 1/1) {
@@ -47,7 +53,7 @@
 		}
 		.hero {
 			width: 100%; /* Full width in vertical layout */
-			height: min(100vw, 90vh); /* Maintain height based on smallest side */
+			height: min(100vw, 75vh); /* Maintain height based on smallest side */
 		}
 }
 	</style>
@@ -55,7 +61,7 @@
 <body>
 	<div class="container">
 		<div class="hero">
-			<h1>zzb—design<br>comunicação estratégica</h1>
+			<h1>zzb—design<br><span font-style="italic">comunicação estratégica</span></h1>
 		</div>
 		<div class="sidekick">
 			<p>Todos os outros animais usam seus sistemas de comunicação para descrever a realidade. 
